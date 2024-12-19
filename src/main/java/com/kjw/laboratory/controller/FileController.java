@@ -27,7 +27,7 @@ public class FileController {
 
 	@PostMapping(LabURL.FILE_HEX)
 	public ResponseEntity convertFileToHexString(MultipartFile file) {
-
+		return fileService.convertFileToHexString(file);
 	}
 
 }
